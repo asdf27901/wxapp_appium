@@ -1,0 +1,5 @@
+search_icon: '//*[@text="搜索"]'
+wxapp_assistant: '//*[@resource-id="com.tencent.mm:id/gbv" and @text="小程序助手"]'
+version_view: '//*[@data-name="版本查看"]'
+beta_version: '//*[text()="开发版"]/following-sibling::wx-view[1]//*[text()="ci机器人1提交"]'
+trial_version:  '//*[text()="体验版"]/following-sibling::wx-view[1]'

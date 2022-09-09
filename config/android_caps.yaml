@@ -1,0 +1,29 @@
+EXECUTOR: 'http://127.0.0.1:4723/wd/hub'   # appium-server地址
+
+TEST_ENV: TEST  # TEST：开发版小程序  PRE：体验版小程序
+DESCRIBE_CAPS: DESCRIBE_CAPS1
+CONTEXT_NAME: "WEBVIEW_com.tencent.mm:appbrand0"
+
+DESCRIBE_CAPS1:
+    platformName: "Android"
+    deviceName: "Redmi Note 9 Pro"
+    platformVersion: "10.0.0"
+    appPackage: "com.tencent.mm"
+    appActivity: ".ui.LauncherUI"
+    automationName: "uiautomator2"
+    noReset: True
+    nativeWebScreenshot: True
+    chromeOptions:
+        androidProcess: "com.tencent.mm:appbrand0"   # 根据微信pid获取到的小程序进程名，不添加小程序进程名无法启动小程序
+
+DESCRIBE_CAPS2:
+    platformName: "Android"
+    deviceName: "小米8"
+    platformVersion: "10.0.0"
+    appPackage: "com.tencent.mm"
+    appActivity: ".ui.LauncherUI"
+    automationName: "uiautomator2"
+    noReset: True
+    nativeWebScreenshot: True
+    chromeOptions:
+        androidProcess: "com.tencent.mm:appbrand0"
