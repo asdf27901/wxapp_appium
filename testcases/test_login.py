@@ -4,4 +4,10 @@
 # author:Meffa
 # ================
 class Test_Login():
-    pass
+    def test_login_success(self):
+        print("登录成功")
+        assert 1 == 1
+    def test_login_fail(self):
+        pass
+if __name__ == '__main__':
+    Test_Login().test_login_success()
