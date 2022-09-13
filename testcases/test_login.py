@@ -8,6 +8,7 @@ class Test_Login():
         print("登录成功")
         assert 1 == 1
     def test_login_fail(self):
+        print("登录失败")
         pass
 if __name__ == '__main__':
-    Test_Login().test_login_success()
+    Test_Login().test_login_fail()
